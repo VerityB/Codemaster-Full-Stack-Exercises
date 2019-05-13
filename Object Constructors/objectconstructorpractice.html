@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <style>
+        
+        </style>
+    
+<script>
+    function onLoaded() {
+        function Person(fName, lName) {
+            this.firstName = fName;
+            this.lastName = lName;
+        }
+
+        // two new instances of people
+        var john = new Person ('John', 'Doe');
+        var jane = new Person ('Jane', 'Smith');
+
+        //btn1Click
+        //alert person1 name
+        document.querySelector('#btn1').addEventListener('click', function(e) { // e is default parameter webpage parses through parameter 
+            alert(john.firstName + ' ' + john.lastName);
+        });
+
+        // btn2Click
+        // alert person2 name
+
+        document.querySelector('#btn2').addEventListener('click', function(e) { // e is default parameter webpage parses through parameter 
+            alert(jane.firstName + ' ' + jane.lastName);
+});
+    }
+</script>
+</head>
+<body onload="onLoaded()"> <!-- this is event listener for when page is loaded it will run the object constructor (that starts with function)-->
+
+    <!--two buttons-->
+<button id="btn1">Btn1</button>
+<button id="btn2">Btn2</button>
+</body>
+</html>

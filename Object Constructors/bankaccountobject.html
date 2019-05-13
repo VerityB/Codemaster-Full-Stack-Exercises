@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <style>
+        
+        </style>
+    
+<script>
+
+// RESOURCES
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Custom_objects
+
+
+  /* function onLoaded() {
+        function BankAccount(accountName) {
+	
+            var _funds = 0;
+        
+            this.accountName = accountName;
+            
+            this.depositFunds = function(amount) {
+                _funds += amount;
+            }
+            
+            this.withdrawalFunds = function(amount) {
+                _funds -= amount;
+            }
+            
+            this.getBalance = function() {
+                return _funds;
+            }
+            
+            return this;
+        }
+
+    // new instance of account
+    var account_1 = new BankAccount("My Account");
+    account_1.depositFunds(20);
+    account_1.withdrawalFunds(15);
+
+    document.querySelector('#btn1').addEventListener('click', function(e) { // e is default parameter webpage parses through parameter 
+            alert('The balance of ' + account_1.accountName + ' is ' + account_1.getBalance());
+        }); */
+
+        // Exercise #1-a
+// Create an 'instance' of the BankAccount class and provide it with a name
+
+
+// Exercise #1-b
+// Display the name of your account
+
+
+// Exercise #1-c
+// Deposit 20 dollars into your bank account
+
+
+// Exercise #1-d
+// Withdrawl 15 dollars into your bank account
+
+
+// Exercise #1-e
+// Display you current balance on the screen
+
+
+
+
+// Exercise #2-a
+// Create a class called 'Battleship' which contains two properties 'xCoord' and 'yCoord' which indicate the ships current position
+function onLoaded() {
+function Battleship (xCoord, yCoord) {
+
+    this.xCoord = xCoord;
+    this.yCoord = yCoord;
+    
+    this.moveUp = function(yCoord) {
+        this.yCoord += yCoord 
+    }
+    this.moveBack = function(yCoord) {
+        this.yCoord -= yCoord  
+    }
+    this.moveRight = function(xCoord) {
+        this.xCoord += xCoord   
+    }
+    this.moveLeft = function(xCoord) {
+        this.xCoord -= xCoord 
+    }
+
+    this.currentCoord = function() {
+        return 'Coords = [' + this.yCoord + ']|[' + this.xCoord + ']'
+    }
+
+}
+  /*  var boat = new Battleship(0, 0);
+    boat.moveRight(3);
+    boat.moveUp(2);
+    
+
+   document.querySelector('#btn1').addEventListener('click', function(e) { // e is default parameter webpage parses through parameter 
+            alert(boat.currentCoord()); 
+
+   }); */
+   var boat1 = new Battleship (0, 0);
+   boat1.moveBack(1);
+   boat1.moveRight(2);
+
+   document.querySelector('#btn1').addEventListener('click', function(e) { // e is default parameter webpage parses through parameter 
+            alert(boat1.currentCoord()); 
+
+   });
+}
+// Exercise #2-b
+// Give the battleship class 4 public methods; moveUp (increments yCoord), moveBack (decrements yCoord), moveRight (increments xCoord), moveLeft (decrements xCoord)
+
+// Exercise #2-c
+// Give the battleship class a public methods that returns to current coordinates in this format: 'Coords = [y]|[x]'
+
+
+
+// Exercise #3-a
+// Create an 'instance' of your battleship
+
+
+
+// Exercise #3-b
+// Move it to 'Coords = 2|3' and display your coordinates
+
+
+
+// Exercise #3-c
+// Move it to 'Coords = -1|2' and display your coordinates
+    
+</script>
+</head>
+<body onload="onLoaded()"> <!-- this is event listener for when page is loaded it will run the object constructor (that starts with function)-->
+
+    <!--one button-->
+<button id="btn1">Btn1</button>
+
+</body>
+</html>
+
+
+
+
+
+

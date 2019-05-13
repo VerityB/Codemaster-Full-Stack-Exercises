@@ -1,0 +1,91 @@
+body {
+    font-family: arial;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* position the image container so that you are 
+able to position the left and right arrows */
+
+.container {
+    position: relative;
+}
+
+/* hide all other images by default */
+
+.mySlides {
+    display: none;
+}
+
+/* add a pointer when hovering over the thumbnail */
+.cursor {
+    cursor: pointer; 
+
+}
+
+/* next and previous buttons */
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto; 
+padding: 30px;
+margin-top: -50px;
+color: yellow; 
+font-weight: bolder;
+font-size: 30px;
+user-select: none; 
+border-radius: 0 3px 3px 0;
+}
+
+/* position the next button to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* on hover, add a coloured background with a bit
+of transparency*/
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* numbertext above img can be styled too */
+
+.numbertext {
+    color: pink;
+    font-size: 20px;
+    padding: 10px 15px;
+    position: absolute; 
+    top: 0;
+}
+
+/* container for the img text */
+.captioncontainer {
+    text-align: center;
+    background-color: brown;
+    padding: 5px 15px;
+    color: white;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+/* to get the column images side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/*
